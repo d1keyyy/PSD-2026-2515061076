@@ -1,6 +1,6 @@
 # Mahardika Putra Abelva
 #2515061076
-
+#Cek login dengan sequential searching
 def CekLogin(ListUser, InputUsername, InputPass):
     for user in ListUser:
         if user["username"] == InputUsername and user["password"] == InputPass:
