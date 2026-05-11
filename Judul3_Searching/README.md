@@ -19,3 +19,4 @@ Cara Kerja :
 Output :
 <img width="477" height="198" alt="image" src="https://github.com/user-attachments/assets/31306ae2-16b9-4b9d-bd93-52ec9fe5090a" />
 Terlihat output jika salah 1 huruf tidak sesuai dengan data base maka akan menampilkan login gagal, namun jika sesuai dengan data base maka login akan berhasil.
+Link Youtube : https://youtu.be/6_5OWFTgpJQ
