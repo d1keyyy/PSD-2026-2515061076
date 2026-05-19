@@ -94,7 +94,7 @@ def main():
     pilih = 0
 
     while pilih != 8:
-        print("\Sistem Antrian Kasir Cafe")
+        print("\nSistem Antrian Kasir Cafe")
         print("1. Enqueue")
         print("2. Dequeue")
         print("3. Peek")
