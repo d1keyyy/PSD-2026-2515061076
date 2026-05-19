@@ -19,4 +19,4 @@ Output Kode :
 <img width="1603" height="903" alt="image" src="https://github.com/user-attachments/assets/0372df5a-7cdd-46f7-a813-5e7ca31a08d2" />
 Gambar diatas adalah contoh output dari fungsi display, hitung total, cariPengunjung, dan hapus semua antrian.
 
-Link youtube : 
+Link youtube : https://youtu.be/--pHdYWS6L4
