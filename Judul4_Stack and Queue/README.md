@@ -1,7 +1,8 @@
 Program antrian kasir cafe
 
 Program antrian kasir ini menggunakan queue linked list yang didalamnya terdapat fitur enqueue, dequeue, peek, display antrian pengunjung, hitung total pengunjung, mencari nama pengunjung, dan menghapus semua antrian.
-<img width="1684" height="5814" alt="SCTA" src="https://github.com/user-attachments/assets/a7b76a2b-ad8f-40db-b7eb-36571998507d" />
+Source Code :
+<img width="1748" height="5814" alt="SCTA" src="https://github.com/user-attachments/assets/c9666118-507f-41c8-b3d2-c0223b4316f9" />
 Langkah Langkah Kode :
 1. Program membuat class Node untuk menyimpan data pengunjung dan pointer next untuk menghubungkan node selanjutnya.
 2. Buat class QueueLinkedList untuk mengatur antrian menggunakan dua pointer yaitu front untuk depan dan rear untuk belakang antrian.
@@ -14,3 +15,4 @@ Langkah Langkah Kode :
 9. Fungsi clearQueue menghapus semua isi antrian dengan cara mengosongkan pointer front dan rear.
 10. Terakhir Pada fungsi main program menampilkan menu dengan perulangan sampai memilih opsi keluar.
 
+Output Kode :
