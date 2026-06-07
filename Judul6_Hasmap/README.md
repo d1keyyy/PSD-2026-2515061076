@@ -6,20 +6,24 @@ Source Code :
 <img width="1982" height="4370" alt="SourceCode" src="https://github.com/user-attachments/assets/b04e50e1-9927-4673-9848-24e2f740eba8" />
 Penjelasan kode : 
   Kelas Node
+  
     class Node: Membuat struktur node untuk menyimpan data CCTV.
     def __init__(self, key, value): Constructor yang dijalankan saat node dibuat.
     self.key = key Menyimpan ID CCTV.
     self.value = value Menyimpan lokasi CCTV.
     self.next = None Menyimpan referensi ke node berikutnya dalam Linked List.
   Kelas HashMapSeparateChaining
+  
     class HashMapSeparateChaining: Membuat Hash Map dengan metode Separate Chaining.
     def __init__(self, size=10): Membuat Hash Table dengan ukuran default 10.
     self.SIZE = size Menyimpan ukuran Hash Table.
     self.table = [None] * self.SIZE Membuat tabel yang seluruh slotnya masih kosong.
   Fungsi Hash
+  
     def hash_function(self, key): Menentukan posisi penyimpanan data dalam Hash Table.
     return (key % self.SIZE + self.SIZE) % self.SIZE Menghasilkan indeks berdasarkan operasi modulo agar selalu berada dalam rentang indeks yang valid.
   Fungsi Insert
+  
     def insert(self, key, value): Menambahkan data CCTV ke Hash Table.
     index = self.hash_function(key) Menghitung indeks penyimpanan berdasarkan ID CCTV.
     current = self.table[index] Mengambil data pertama pada indeks tersebut.
@@ -32,6 +36,7 @@ Penjelasan kode :
     new_node.next = self.table[index] Menghubungkan node baru dengan node yang sudah ada.
     self.table[index] = new_node Menjadikan node baru sebagai node pertama pada indeks tersebut.
   Fungsi Search
+  
     def search(self, key): Mencari data CCTV berdasarkan ID.
     index = self.hash_function(key) Menentukan indeks pencarian.
     current = self.table[index] Mengambil node pertama pada indeks tersebut.
@@ -41,6 +46,7 @@ Penjelasan kode :
     current = current.next Berpindah ke node berikutnya.
     return None Menandakan data CCTV tidak ditemukan.
   Fungsi Remove
+  
     def remove_key(self, key): Menghapus data CCTV berdasarkan ID.
     index = self.hash_function(key) Menentukan indeks data yang akan dihapus.
     current = self.table[index] Mengambil node pertama pada indeks tersebut.
@@ -55,6 +61,7 @@ Penjelasan kode :
     current = current.next Berpindah ke node berikutnya.
     return False Menandakan data tidak ditemukan.
   Fungsi Display
+  
     def display(self): Menampilkan seluruh isi Hash Table.
     print("\nIsi Hash Table (Separate Chaining):") Menampilkan judul tampilan data.
     for i in range(self.SIZE): Mengulang seluruh indeks dalam Hash Table.
@@ -65,6 +72,7 @@ Penjelasan kode :
     current = current.next Berpindah ke node berikutnya.
     print("NULL") Menandakan tidak ada node lagi pada indeks tersebut.
   Fungsi Main
+  
     def main(): Merupakan fungsi utama program.
     cctv_system = HashMapSeparateChaining() Membuat objek Hash Map untuk menyimpan data CCTV.
     cctv_system.insert() Menambahkan beberapa data CCTV awal ke dalam sistem.
